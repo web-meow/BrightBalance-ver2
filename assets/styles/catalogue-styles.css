@@ -323,6 +323,27 @@
     transition: 0.5s;
 }
 
+.section-pages .pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid black 1px;
+    margin: 25px;
+    padding: 15px;
+}
+
+.pages .nums{
+    display: flex;
+}
+
+.pages .nums *{
+    padding: 0 10px;
+}
+
+.pages .nums img{
+    transform: rotate(-90deg);
+}
 
 footer{
     background-color: #2E353A;
