@@ -290,6 +290,10 @@
     transition: 0.5s;
 }
 
+.product .card:hover .descr *{
+    margin: 5px 0;
+}
+
 .product .card:hover{
     position: relative;
     background-color: white;
@@ -305,6 +309,19 @@
     padding: 5px;
 }
 
+.product .card .descr button{
+    border: solid #FFE679 2px;
+    padding: 5px 10px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.product .card .descr button:hover{
+    background-color: #60B9D8;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
 
 
 footer{
