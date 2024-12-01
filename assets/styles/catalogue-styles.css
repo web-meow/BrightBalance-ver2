@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "PoiretOne";
+    src: url(../fonts/PoiretOne-Regular.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "PoiretOne";
+    font-size: 24px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.logo img{
+    width: 214px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.navbar button{
+    border: none;
+    width: 33px;
+    height: 33px;
+    background-color: #3498db00;
+    background-size: cover;
+    margin: 5px;
+}
+
+.navbar .map{
+    background-image: url(../imgs/map-mark.svg);
+}
+
+.navbar .cart{
+    background-image: url(../imgs/cart.svg);
+}
+
+.navbar .account{
+    background-image: url(../imgs/account-icon.svg);
+}
+
+.navbar input{
+    width: 650px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+.navbar .dropdown-toggle {
+    display: none;
+}
+
+/* Стили для кнопки */
+.catalog-button {
+    background-color: #60B9D8;
+    color: white;
+    padding: 10px 20px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.catalog-button img{
+    padding-right: 20px;
+}
+
+/* Скрытый список до активации */
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 20%;
+    background-color: #f9f9f9;
+    min-width: 1000px;
+    height: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: solid 1px black;
+    padding: 5px;
+}
+
+/* Показываем список при нажатии на кнопку */
+ .dropdown-toggle:checked ~ .dropdown-content {
+    display: block;
+}
+
+/* Ссылки внутри списка */
+.navbar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-content .line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+/* Изменение цвета ссылки при наведении */
+.navbar .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.section-popular{
+    background-image: url(../imgs/background-g628e345a4_1920.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.section-popular .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-popular .title p{
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 15px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-card {
+    margin: 1rem;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
+}
+
+.cat-card img {
+    width: 200px;
+    height: 170px;
+}
+
+.cat-card p {
+    margin: 0.5em 0;
+}
+
+.cat-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.section-catalogue .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-catalogue .preferences{
+    padding-top: 20px;
+}
+
+
+.dropdown {
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.dropdown-title {
+    cursor: pointer;
+    background-color: #eaeaea;
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+    display: block;
+}
+
+.options-list {
+    list-style-type: none;
+    padding: 10px;
+    display: none;
+}
+
+.options-list li {
+    margin-bottom: 5px;
+}
+
+.options-list input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.options-list label {
+    vertical-align: middle;
+}
+
+#toggle-dropdown1:checked ~ .options-list {
+    display: block;
+}
+#toggle-dropdown2:checked ~ .options-list {
+    display: block;
+}
+#toggle-dropdown3:checked ~ .options-list {
+    display: block;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .card {
+    width: 270px;
+    height: 290px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .card img {
+    width: 200px;
+}
+
+.product .card .descr{
+   background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 5px;
+    padding: 15px; 
+}
+
+.product .card:hover .descr{
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.product .card:hover{
+    position: relative;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s ease-in-out;
+}
+
+.product .card .descr p{
+    font-size: 20px;
+}
+
+.product .card p{
+    padding: 5px;
+}
+
+
+
+footer{
+    background-color: #2E353A;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+footer *{
+    padding: 5px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .links{
+    display: flex;
+    flex-direction: column;
+}
+.contct{
+    display: flex;
+}
+
+.contct p{
+    padding-left: 10px;
+}
+
+footer .line{
+    height: 300px;
+    width: 1px;
+    background-color: white;
+}
+
+
+
+
+
+
