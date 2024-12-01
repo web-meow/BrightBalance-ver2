@@ -180,12 +180,11 @@
 }
 
 .section-catalogue .preferences{
-    padding-top: 20px;
+    width: 100%;
 }
 
-
 .dropdown {
-    width: 300px;
+    width: 100%;
     max-height: 200px;
     overflow-y: auto;
     border: 1px solid #ccc;
@@ -194,17 +193,19 @@
 
 .dropdown-title {
     cursor: pointer;
-    background-color: #eaeaea;
     padding: 10px;
-    text-align: center;
     user-select: none;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
 }
 
 .options-list {
     list-style-type: none;
     padding: 10px;
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.5s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .options-list li {
@@ -222,12 +223,38 @@
 
 #toggle-dropdown1:checked ~ .options-list {
     display: block;
+    opacity: 1;
+    max-height: 400px;
+    transition: 0.5s ease-in-out opacity 0.2s ease-in-out;
 }
 #toggle-dropdown2:checked ~ .options-list {
     display: block;
+    opacity: 1;
+    max-height: 400px;
+    transition: 0.5s ease-in-out opacity 0.2s ease-in-out;
 }
 #toggle-dropdown3:checked ~ .options-list {
     display: block;
+    opacity: 1;
+    max-height: 400px;
+    transition: 0.5s ease-in-out opacity 0.2s ease-in-out;
+}
+
+.dropdown-title img{
+    transition: 0.3s;
+}
+
+#toggle-dropdown1:checked ~ .dropdown-title img {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+#toggle-dropdown2:checked ~ .dropdown-title img {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+#toggle-dropdown3:checked ~ .dropdown-title img {
+    transform: rotate(180deg);
+    transition: 0.3s;
 }
 
 .product {
@@ -243,6 +270,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease-in-out;
 }
 
 .product .card img {
@@ -254,18 +282,19 @@
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 5px;
     padding: 15px; 
+    transition: 0.5s ease-in-out;
 }
 
 .product .card:hover .descr{
     display: block;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s;
 }
 
 .product .card:hover{
     position: relative;
     background-color: white;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .product .card .descr p{
