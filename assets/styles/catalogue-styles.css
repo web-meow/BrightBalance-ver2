@@ -295,6 +295,11 @@ footer a{
     color: white;
 }
 
+footer a:hover{
+    color: #FFE679;
+    transition: 0.2s ease-in-out;
+}
+
 footer .links{
     display: flex;
     flex-direction: column;
