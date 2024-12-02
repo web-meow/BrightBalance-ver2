@@ -125,37 +125,93 @@
     background-color: #f1f1f1;
 }
 
+.section-first{
+    background-image: url(../imgs/company-main.png);
+    height: 800px;
+}
 
+.section-first .title {
+    font-size: 50px;
+    color: white;
+    text-align: end;
+    padding: 100px;
+}
 
+.section-first .about{
+    width: 65%;
+    font-size: 34px;
+    text-align: end;
+    padding-top: 110px;
+    line-height: 50px;
+}
 
+.section-story .title{
+    font-size: 50px;
+    padding: 50px 0;
+}
 
+.section-story .block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.section-story .block p{
+    font-size: 32px;
+    text-align: center;
+}
 
+.section-addresses .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.section-addresses .title{
+    width: 100%;
+    text-align: end;
+    font-size: 50px;
+    padding: 50px 0;
+}
 
+.section-addresses img{
+    width: 70%;
+}
 
+.section-addresses .catalogue{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
 
+.section-addresses .catalogue p{
+    font-size: 28px;
+}
 
+.section-addresses button{
+    background-color: #60B9D8;
+    color: white;
+    padding: 10px 15px;
+    font-size: 34px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
 
+.section-addresses button a{
+    color: white;
+    text-decoration: none;
+}
 
+.section-addresses button img {
+    width: 15%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section-addresses button:hover{
+    background-color: #FFE679;
+    transition: 0.3s;
+}
 
 footer{
     background-color: #2E353A;
@@ -196,3 +252,4 @@ footer .line{
     width: 1px;
     background-color: white;
 }
+
